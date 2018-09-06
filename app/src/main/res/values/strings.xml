@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">My App</string>
+    <string name="action_my">My Action</string>
+</resources>
