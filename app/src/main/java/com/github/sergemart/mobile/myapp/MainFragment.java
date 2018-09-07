@@ -15,9 +15,6 @@ import android.view.ViewGroup;
 
 import com.github.sergemart.mobile.myapp.data.Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class MainFragment extends Fragment {
 
@@ -45,9 +42,9 @@ public class MainFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View fragmentView = inflater.inflate(R.layout.fragment_list, container, false);
 
-        this.getWidgetReferences(fragmentView);
-        this.setWidgetAttributes();
-        this.setWidgetListeners();
+        this.initMemberVariables(fragmentView);
+        this.setAttributes();
+        this.setListeners();
 
         return fragmentView;
     }
@@ -84,7 +81,7 @@ public class MainFragment extends Fragment {
     /**
      * Get widget references
      */
-    private void getWidgetReferences(View fragmentView) {
+    private void initMemberVariables(View fragmentView) {
         mRecyclerView = fragmentView.findViewById(R.id.recyclerView_list);
     }
 
@@ -92,7 +89,7 @@ public class MainFragment extends Fragment {
     /**
      * Set widget attributes
      */
-    private void setWidgetAttributes() {
+    private void setAttributes() {
         mRecyclerView.setLayoutManager(new LinearLayoutManager( this.getActivity() ));              // set up the RecyclerView
         this.setupAdapter();
     }
@@ -101,7 +98,7 @@ public class MainFragment extends Fragment {
     /**
      * Set listeners to widgets
      */
-    private void setWidgetListeners() {
+    private void setListeners() {
     }
 
 
