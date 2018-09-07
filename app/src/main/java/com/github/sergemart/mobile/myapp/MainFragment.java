@@ -79,7 +79,7 @@ public class MainFragment extends Fragment {
     // --------------------------- Widget controls
 
     /**
-     * Get widget references
+     * Init member variables
      */
     private void initMemberVariables(View fragmentView) {
         mRecyclerView = fragmentView.findViewById(R.id.recyclerView_list);
@@ -87,7 +87,7 @@ public class MainFragment extends Fragment {
 
 
     /**
-     * Set widget attributes
+     * Set attributes
      */
     private void setAttributes() {
         mRecyclerView.setLayoutManager(new LinearLayoutManager( this.getActivity() ));              // set up the RecyclerView
@@ -96,7 +96,7 @@ public class MainFragment extends Fragment {
 
 
     /**
-     * Set listeners to widgets
+     * Set listeners to widgets and containers
      */
     private void setListeners() {
     }
