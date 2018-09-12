@@ -5,6 +5,7 @@
     package="com.github.sergemart.mobile.myapp">
 
     <application
+        android:name="com.github.sergemart.mobile.myapp.App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
