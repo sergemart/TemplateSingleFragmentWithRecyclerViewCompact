@@ -1,4 +1,4 @@
-package com.github.sergemart.mobile.myapp;
+package com.github.sergemart.mobile.myapp.ui;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.github.sergemart.mobile.myapp.R;
 import com.github.sergemart.mobile.myapp.data.Repository;
 
 
